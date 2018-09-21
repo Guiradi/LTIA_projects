@@ -1,0 +1,127 @@
+/*
+*
+* @author
+* @version 0.1
+*/
+
+/* == LAYOUT == */
+
+body
+{
+	display: table;
+	background: url('../img/bg.png') no-repeat;
+	background-size: 100% 1086vh;
+	font-family: "Courier Std", Courier, monospace;
+}
+
+/* = Barra de navegação = */
+
+/* Imagem de Fundo */
+.navbar-fundo
+{
+	border: none;
+	padding: 15px 5px 40px 5px;
+	background: url('../img/top_menu.png');
+	background-size: 1366px 1340%;
+	background-color: transparent;
+}
+/* Logo Carta */
+.img-logo
+{
+	height: 20vh;
+	display: block;
+	background: url('../img/favicon.png') no-repeat; 
+	background-size: contain;
+	color: transparent;
+}
+.navbar-brand
+{
+	padding: 10px 5px 10px 30px;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+{
+	color: #852940;
+	background: none;
+	text-decoration: underline;
+}
+.navbar-default .navbar-nav>li>a {
+	color: #852940;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: #ffa3c8;
+}
+.navbar-default .navbar-nav>li>a:active {
+	color: #4f0029;
+	text-decoration: underline;
+}
+
+
+/* == TIPOGRAFIA == */
+
+
+/* == MEDIA QUERIES == */
+
+/* xs < 768 */
+@media screen and (max-width: 767px)
+{
+	body
+	{
+		background-size: 100% 898px;  /* 700px (largura media) / 5692 * 7304*/
+	}
+}
+
+/* sm */
+@media screen and (min-width: 768px)
+{
+	body
+	{
+		background-size: 100% 986px; /* 880px (largura media) / 5692 * 7304*/
+	}
+	.navbar-nav
+	{
+    	margin: 0 auto;
+    	display: table;
+    	table-layout: fixed;
+    	float: none;
+  	}
+
+  	.font_nav
+  	{
+  		padding-right: 2vw;
+  	}
+}
+
+/* md */
+@media screen and (min-width: 992px)
+{
+	body
+	{
+		background-size: 100% 1273px; /* 1096px (largura media) / 5692 * 7304*/
+	}	
+
+	.font_nav
+	{
+		padding-left: 1vw;	
+		padding-right: 4vw;
+		font-size: 15px;
+	}
+}
+
+/* lg */
+@media screen and (min-width: 1200px)
+{
+	body
+	{
+		background-size: 100%;
+	}
+
+	.font_nav
+	{
+		padding-left: 2vw;
+		padding-right: 5vw;
+		font-size: 16px;
+	}
+}
