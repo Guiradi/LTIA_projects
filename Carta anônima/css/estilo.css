@@ -8,10 +8,11 @@
 
 body
 {
-	display: table;
-	background: url('../img/bg.png') no-repeat;
+	background: url('../img/bg.png') repeat;
 	background-size: 100% 1086vh;
 	font-family: "Courier Std", Courier, monospace;
+	color: #4f0029;
+	font-size: 15px;
 }
 
 /* = Barra de navegação = */
@@ -21,60 +22,157 @@ body
 {
 	border: none;
 	padding: 15px 5px 40px 5px;
-	background: url('../img/top_menu.png');
+	background: url('../img/top_menu.png') no-repeat;
 	background-size: 1366px 1340%;
 	background-color: transparent;
 }
 /* Logo Carta */
 .img-logo
 {
-	height: 20vh;
+	height: 60px;
+	width: 60px;
 	display: block;
 	background: url('../img/favicon.png') no-repeat; 
 	background-size: contain;
 	color: transparent;
 }
+/* Padding da logo */
 .navbar-brand
 {
-	padding: 10px 5px 10px 30px;
+	padding: 0px 5px 10px 30px;
 }
+/* Retira a borda da droplist qdo a navbar colapsa */
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border: none;
 }
+/* Link da página atual */
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
 {
 	color: #852940;
 	background: none;
 	text-decoration: underline;
 }
+/* Cor dos links */
 .navbar-default .navbar-nav>li>a {
 	color: #852940;
 }
+/* Cor do hover do link */
 .navbar-default .navbar-nav>li>a:hover {
 	color: #ffa3c8;
 }
+/* Click do link */
 .navbar-default .navbar-nav>li>a:active {
-	color: #4f0029;
+	color: #380012;
 	text-decoration: underline;
 }
 
+/* == SEÇÕES == */
 
+/* = Primeiro conteúdo = */
+/* Distanciamento da navbar do primeiro conteudo: 
+ * não da pra usar na body pq senão desce o background 
+ */
+#primeiro_conteudo
+{
+	padding: 135px 0 30px 0;
+}
+/* Imagem da home */
+.img-home
+{
+	width: 360px;
+	height: 260px;
+	display: block;
+	background: url('../img/logo_home.png') no-repeat;
+	background-size: contain;
+	color: transparent;
+}
+/* Distância do texto em dispositivos xs */
+#img-xs
+{
+	padding-bottom: 10px;
+}
+
+/* Espaçamento relatos */
+
+
+/* == FOOTER == */
+footer
+{
+	padding: 50px 0 20px 0;
+	text-align: center;
+	font-size: 15px;
+	color: #852940;
+}
+#marca-texto1
+{
+	background: url('../img/policia.png') no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+#marca-texto2
+{
+	background: url('../img/central.png') no-repeat;
+	background-size: contain;
+	background-position: center;	
+}
+#marca-texto3
+{
+	background: url('../img/disk.png') no-repeat;
+	background-size: contain;
+	background-position: center;	
+}
 /* == TIPOGRAFIA == */
-
+.justif
+{
+	text-align: justify;
+}
+.centralizado
+{
+	text-align: center;
+}
+.justif>a, .justif>p>a{
+	color: #852940;
+	text-decoration: underline;
+}
+.justif>a:hover, .justif>p>a:hover{
+	color: #ffa3c8;
+	text-decoration: none;
+}
+.justif>a:active, .justif>p>a:active{
+	color: #380012;
+	text-decoration: none;
+}
+#autor-relato
+{
+	display: inline-block;
+	float: right;
+}
 
 /* == MEDIA QUERIES == */
 
 /* xs < 768 */
-@media screen and (max-width: 767px)
+@media screen and (max-width: 769px)
 {
 	body
 	{
 		background-size: 100% 898px;  /* 700px (largura media) / 5692 * 7304*/
 	}
+	#marca-texto1, #marca-texto2, #marca-texto3
+	{
+		padding-bottom: 15px;
+	}
+	.justif
+	{
+		font-size: 14px;
+	}
+	.relato
+	{
+		padding: 0vh 11vw 4vh 11vw;
+	}
 }
 
 /* sm */
-@media screen and (min-width: 768px)
+@media screen and (min-width: 770px)
 {
 	body
 	{
@@ -90,9 +188,20 @@ body
 
   	.font_nav
   	{
-  		padding-right: 2vw;
+  		padding-right: 0.6vw;
+  	}
+
+  	.
+}
+
+@media screen and (min-width: 809px)
+{
+  	.font_nav
+  	{
+  		padding-right: 1.5vw;
   	}
 }
+
 
 /* md */
 @media screen and (min-width: 992px)
@@ -105,7 +214,7 @@ body
 	.font_nav
 	{
 		padding-left: 1vw;	
-		padding-right: 4vw;
+		padding-right: 3.8vw;
 		font-size: 15px;
 	}
 }
