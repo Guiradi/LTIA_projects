@@ -52,23 +52,11 @@ body
 	background: none;
 	text-decoration: underline;
 }
-/* Cor dos links */
-.navbar-default .navbar-nav>li>a {
-	color: #852940;
-}
-/* Cor do hover do link */
-.navbar-default .navbar-nav>li>a:hover {
-	color: #ffa3c8;
-}
-/* Click do link */
-.navbar-default .navbar-nav>li>a:active {
-	color: #380012;
-	text-decoration: underline;
-}
 
 /* == SEÇÕES == */
 
 /* = Primeiro conteúdo = */
+
 /* Distanciamento da navbar do primeiro conteudo: 
  * não da pra usar na body pq senão desce o background 
  */
@@ -92,10 +80,29 @@ body
 	padding-bottom: 10px;
 }
 
-/* Espaçamento relatos */
-
+/*== FORM ==*/
+.form-control
+{
+	background-color: rgba(0, 0, 0, 0.05);
+	border: none;
+}
+#botao-enviar
+{
+	background-color: #933e50;
+	color: #f0deb9;
+	font-weight: bold;
+	border-radius: 8px;		/*Bordas arredondadas:*/
+	-webkit-border-radius:8px;	/*Para funcionar em versões anteriores do chrome e safari: */	
+	-moz-border-radius:8	px; 	/*Para funcionar em versões anteriores do mozilla: */
+	/*Com esse atributo, o padding não influencia no tamanho da caixa:*/
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box; /*(Chrome e safari)*/
+	-moz-box-sizing: border-box; /*(mozilla)*/
+	border-color: transparent;
+}
 
 /* == FOOTER == */
+
 footer
 {
 	padding: 50px 0 20px 0;
@@ -121,7 +128,79 @@ footer
 	background-size: contain;
 	background-position: center;	
 }
+#autor-relato
+{
+	display: inline-block;
+	float: right;
+}
+#denuncia
+{
+	display: inline-block;
+	float: right;
+}
+
 /* == TIPOGRAFIA == */
+
+/* = cor da seção escreva = */
+.escreva
+{
+	color: #852940;
+}
+/* = Cor dos links = */
+.navbar-default .navbar-nav>li>a, #denuncia>a
+{
+	color: #852940;
+}
+.justif>a, .justif>p>a
+{
+	color: #852940;
+	text-decoration: underline;
+}
+.relato>a
+{
+	color: #380012;
+}
+
+/* = Cor do hover do link = */
+.navbar-default .navbar-nav>li>a:hover, #denuncia>a:hover
+{
+	color: #ffa3c8;
+	text-decoration: none;
+}
+.justif>a:hover, .justif>p>a:hover
+{
+	color: #ffa3c8;
+	text-decoration: none;
+}
+.relato>a:hover
+{
+	color: #852940;
+	text-decoration: none;
+}
+
+/* = Click do link = */
+.navbar-default .navbar-nav>li>a:active, #denuncia>a:active
+{
+	color: #380012;
+	text-decoration: underline;
+}
+.justif>a:active, .justif>p>a:active
+{
+	color: #380012;
+	text-decoration: none;
+}
+.relato>a:active
+{
+	text-decoration: underline;
+}
+
+/* = Links visitados = */
+a:visited
+{
+	text-decoration: none;
+}
+
+/* = Alinhamento do texto = */
 .justif
 {
 	text-align: justify;
@@ -130,23 +209,13 @@ footer
 {
 	text-align: center;
 }
-.justif>a, .justif>p>a{
-	color: #852940;
-	text-decoration: underline;
-}
-.justif>a:hover, .justif>p>a:hover{
-	color: #ffa3c8;
-	text-decoration: none;
-}
-.justif>a:active, .justif>p>a:active{
-	color: #380012;
-	text-decoration: none;
-}
-#autor-relato
-{
-	display: inline-block;
-	float: right;
-}
+
+
+
+
+
+
+
 
 /* == MEDIA QUERIES == */
 
@@ -157,6 +226,8 @@ footer
 	{
 		background-size: 100% 898px;  /* 700px (largura media) / 5692 * 7304*/
 	}
+
+	/*== TIPOGRAFIA ==*/
 	#marca-texto1, #marca-texto2, #marca-texto3
 	{
 		padding-bottom: 15px;
@@ -169,6 +240,11 @@ footer
 	{
 		padding: 0vh 11vw 4vh 11vw;
 	}
+	#page-name
+	{
+		text-align: center;
+	}
+
 }
 
 /* sm */
@@ -186,16 +262,16 @@ footer
     	float: none;
   	}
 
+  	/*== TIPOGRAFIA ==*/
   	.font_nav
   	{
   		padding-right: 0.6vw;
   	}
-
-  	.
 }
 
 @media screen and (min-width: 809px)
 {
+  	/*== TIPOGRAFIA ==*/
   	.font_nav
   	{
   		padding-right: 1.5vw;
@@ -209,14 +285,21 @@ footer
 	body
 	{
 		background-size: 100% 1273px; /* 1096px (largura media) / 5692 * 7304*/
-	}	
+	}
 
+	#botao-enviar
+	{
+		margin-left: -1.8vw;
+	}
+
+
+	/*== TIPOGRAFIA ==*/
 	.font_nav
 	{
 		padding-left: 1vw;	
 		padding-right: 3.8vw;
 		font-size: 15px;
-	}
+	}	
 }
 
 /* lg */
@@ -227,10 +310,20 @@ footer
 		background-size: 100%;
 	}
 
+	#botao-enviar
+	{
+		margin-left: -0.4vw;
+	}	
+
+	/*== TIPOGRAFIA ==*/
 	.font_nav
 	{
 		padding-left: 2vw;
 		padding-right: 5vw;
 		font-size: 16px;
 	}
+	.letra-label
+  	{
+  		font-size: 14px;
+  	}
 }
