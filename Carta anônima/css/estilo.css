@@ -10,7 +10,7 @@ body
 {
 	background: url('../img/bg.png') repeat;
 	background-size: 100% 1086vh;
-	font-family: "Courier Std", Courier, monospace;
+	font-family: "Courier Std","Courier New", Courier, monospace;
 	color: #4f0029;
 	font-size: 15px;
 }
@@ -130,7 +130,7 @@ footer
 }
 #autor-relato
 {
-	display: inline-block;
+	display: block;
 	float: right;
 }
 #denuncia
@@ -146,6 +146,22 @@ footer
 {
 	color: #852940;
 }
+
+/* = cor dos titulos info e privacidade = */
+.titulo>h3
+{
+	text-align: center;
+	margin-bottom: 3vh;
+}
+.subtitulo>p
+{
+	text-align: center;
+	font-size: 16px;
+	font-style: italic;
+	margin-bottom: 3vh;
+}
+
+
 /* = Cor dos links = */
 .navbar-default .navbar-nav>li>a, #denuncia>a
 {
@@ -235,6 +251,10 @@ a:visited
 	.justif
 	{
 		font-size: 14px;
+	}
+	.subtitulo
+	{
+		font-size: 15px;
 	}
 	.relato
 	{
