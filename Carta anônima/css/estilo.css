@@ -4,7 +4,9 @@
 * @version 0.1
 */
 
-/* == LAYOUT == */
+/* ========== LAYOUT ========== */
+
+/* ===== GERAL ===== */
 
 body
 {
@@ -15,55 +17,60 @@ body
 	font-size: 15px;
 }
 
-/* = Barra de navegação = */
 
-/* Imagem de Fundo */
-.navbar-fundo
-{
-	border: none;
-	padding: 15px 5px 40px 5px;
-	background: url('../img/top_menu.png') no-repeat;
-	background-size: 1366px 1340%;
-	background-color: transparent;
-}
-/* Logo Carta */
+/* ===== NAVBAR ===== */
+
+/* Background da barra transparente (para a imagem de rasgo poder ficar vazada) */
+ .navbar-default
+ {
+ 	background-color: transparent;
+ }
+
+/* Logo Carta (classe para colocá-lo inteiro dentro da span)*/
 .img-logo
 {
 	height: 60px;
-	width: 60px;
+	width: 60px; 
 	display: block;
 	background: url('../img/favicon.png') no-repeat; 
 	background-size: contain;
 	color: transparent;
 }
-/* Padding da logo */
+/* Ajuste de posição da logo carta */
 .navbar-brand
 {
 	padding: 0px 5px 10px 30px;
+	position: relative;
 }
+
 /* Retira a borda da droplist qdo a navbar colapsa */
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+.navbar, .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border: none;
+    box-shadow: none;
 }
-/* Link da página atual */
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+
+/* Define a cor do botão toggle como branco para não diferenciar da barra */
+.navbar-default .navbar-toggle ,.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover
 {
-	color: #380012;
-	background: none;
-	text-decoration: underline;
+	background-color: #fff;
 }
 
-/* == SEÇÕES == */
 
-/* = Primeiro conteúdo = */
+/* ===== SEÇÕES ===== */
+
+/* == Primeiro conteúdo == */
 
 /* Distanciamento da navbar do primeiro conteudo: 
- * não da pra usar na body pq senão desce o background 
+ * Obs: não da pra usar na body pq senão desce o background.
+ * Obs2: utilizei a seção primeiro conteúdo em caso de navegação por scroll
  */
 #primeiro_conteudo
 {
 	padding: 135px 0 30px 0;
 }
+ 
+/* == HOME == */
+
 /* Imagem da home */
 .img-home
 {
@@ -74,18 +81,40 @@ body
 	background-size: contain;
 	color: transparent;
 }
+
 /* Distância do texto em dispositivos xs */
 #img-xs
 {
 	padding-bottom: 10px;
 }
 
-/*== FORM ==*/
+/* == RELATOS == */
+
+/* Autor do relato alinhado a direita do relato */
+#autor-relato
+{
+	display: block;
+	float: right;
+}
+
+/* Posição do link denuncia */
+#denuncia
+{
+	margin-top: 3vh;
+	display: inline-block;
+	float: right;
+}
+
+/*== FORM ESCREVA ==*/
+
+/* Bg transparente */
 .form-control
 {
 	background-color: rgba(0, 0, 0, 0.05);
 	border: none;
 }
+
+/* Botão personalizado */
 #botao-enviar
 {
 	background-color: #933e50;
@@ -101,7 +130,7 @@ body
 	border-color: transparent;
 }
 
-/* == FOOTER == */
+/* ===== FOOTER ===== */
 
 footer
 {
@@ -110,45 +139,39 @@ footer
 	font-size: 15px;
 	color: #852940;
 }
+
+/* Marca-texto da policia */
 #marca-texto1
 {
 	background: url('../img/policia.png') no-repeat;
 	background-size: contain;
 	background-position: center;
 }
+/* Marca-texto da central */
 #marca-texto2
 {
 	background: url('../img/central.png') no-repeat;
 	background-size: contain;
 	background-position: center;	
 }
+/* Marca-texto do disk */
 #marca-texto3
 {
 	background: url('../img/disk.png') no-repeat;
 	background-size: contain;
 	background-position: center;	
 }
-#autor-relato
-{
-	display: block;
-	float: right;
-}
-#denuncia
-{
-	margin-top: 3vh;
-	display: inline-block;
-	float: right;
-}
 
-/* == TIPOGRAFIA == */
 
-/* = cor da seção escreva = */
+/* ========== TIPOGRAFIA ========== */
+
+/* cor da fonte da seção escreva */
 .escreva
 {
 	color: #852940;
 }
 
-/* = cor dos titulos info e privacidade = */
+/* = cor da fonte dos titulos e subtitulos info e privacidade = */
 .titulo>h3
 {
 	text-align: center;
@@ -162,62 +185,89 @@ footer
 	margin-bottom: 3vh;
 }
 
+/* ===== Cor dos links ===== */
 
-/* = Cor dos links = */
+/* = Fonte principal Links = */
+
+/* Link navbar e denuncia */
 .navbar-default .navbar-nav>li>a, #denuncia>a
 {
 	color: #380012;
 }
+
+/* Links no meio dos textos justificados */
 .justif>a, .justif>p>a
 {
 	color: #852940;
 	text-decoration: underline;
 }
+
+/* Link relato */
 .relato>a
 {
 	color: #471824;
 }
 
-/* = Cor do hover do link = */
+/* = Cor do hover dos link = */
+
+/* Hover navbar e denuncia */
 .navbar-default .navbar-nav>li>a:hover, #denuncia>a:hover
 {
 	color: #ffa3c8;
 	text-decoration: none;
 }
+
+/* Hover links do texto justificado */
 .justif>a:hover, .justif>p>a:hover
 {
 	color: #ffa3c8;
 	text-decoration: none;
 }
+
+/* Hover dos relatos */
 .relato>a:hover
 {
 	color: #852940;
 	text-decoration: none;
 }
 
-/* = Click do link = */
+/* = Cor ao Click do link = */
+
+/* Click navbar e denuncia */
 .navbar-default .navbar-nav>li>a:active, #denuncia>a:active
 {
 	color: #380012;
 	text-decoration: underline;
 }
+
+/* Click textos justificados */
 .justif>a:active, .justif>p>a:active
 {
 	color: #380012;
 	text-decoration: none;
 }
+
+/* Click relatos */
 .relato>a:active
 {
 	text-decoration: underline;
 }
 
-/* = Links visitados = */
+/* = Remoção da decoração dos links visitados = */
 a:visited
 {
 	text-decoration: none;
 }
 
-/* = Alinhamento do texto = */
+/* Link da página atual sublinhado na navbar */
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+{
+	color: #380012;
+	background: none;
+	text-decoration: underline;
+}
+
+/* ===== Alinhamento do texto ===== */
 .justif
 {
 	text-align: justify;
@@ -228,23 +278,33 @@ a:visited
 }
 
 
+/* ========== MEDIA QUERIES ========== */
 
-
-
-
-
-
-/* == MEDIA QUERIES == */
-
-/* xs < 768 */
-@media screen and (max-width: 769px)
+/* ===== xs < 768 ===== */
+@media screen and (max-width: 767px) /* Fontes dos tamanhos 768 e 769 extrapolavam a navbar */
 {
+	/* Reajuste do tamanho do bg */
 	body
 	{
 		background-size: 100% 898px;  /* 700px (largura media) / 5692 * 7304*/
 	}
 
-	/*== TIPOGRAFIA ==*/
+	/* A navbar em mobiles está configurada de uma maneira diferente. */
+	#top-mobile
+	{
+		height: 62px;
+		width: 800px;
+		border: none;
+	}
+	.navbar-fundo
+	{
+		border: none;
+		padding-top: 15px;
+		background-color: #fff;
+	}
+
+	/* TIPOGRAFIA: tive que diminuir alguns tamanhos e adicionar alguns paddings por questões de visualização */
+
 	#marca-texto1, #marca-texto2, #marca-texto3
 	{
 		padding-bottom: 15px;
@@ -269,12 +329,25 @@ a:visited
 }
 
 /* sm */
-@media screen and (min-width: 770px)
+@media screen and (min-width: 768px)
 {
+	/* Reajuste do tamanho do bg */
 	body
 	{
-		background-size: 100% 986px; /* 880px (largura media) / 5692 * 7304*/
+		background-size: 100% 986px;
 	}
+
+	/* Construção da navbar com a imagem original */
+	.navbar-fundo
+	{
+		border: none;
+		padding: 15px 5px 40px 5px;
+		background: url('../img/top_menu.png') no-repeat;
+		background-size: 1366px 1340%;
+		background-color: transparent;
+	}
+
+	/* Centralização dos itens da navbar */
 	.navbar-nav
 	{
     	margin: 0 auto;
@@ -283,16 +356,16 @@ a:visited
     	float: none;
   	}
 
-  	/*== TIPOGRAFIA ==*/
+  	/* TIPOGRAFIA: para evitar extrapolação dos itens no container-fluid da navbar */
   	.font_nav
   	{
-  		padding-right: 0.6vw;
+  		padding-right: 0.5vw;
   	}
 }
 
-@media screen and (min-width: 809px)
+@media screen and (min-width: 809px) /* Padding de alguns tamanhos extrapolavam a navbar */
 {
-  	/*== TIPOGRAFIA ==*/
+  	/* TIPOGRAFIA: para evitar extrapolação dos itens no container-fluid da navbar */
   	.font_nav
   	{
   		padding-right: 1.5vw;
@@ -303,18 +376,20 @@ a:visited
 /* md */
 @media screen and (min-width: 992px)
 {
+	/* Reajuste do tamanho do bg */
 	body
 	{
-		background-size: 100% 1273px; /* 1096px (largura media) / 5692 * 7304*/
+		background-size: 100% 1273px;
 	}
 
+	/* Reajuste da posição do botão enviar */
 	#botao-enviar
 	{
 		margin-left: -1.8vw;
 	}
 
 
-	/*== TIPOGRAFIA ==*/
+	/* TIPOGRAFIA: tive que diminuir alguns tamanhos e adicionar alguns paddings por questões de visualização */
 	.font_nav
 	{
 		padding-left: 1vw;	
@@ -326,17 +401,19 @@ a:visited
 /* lg */
 @media screen and (min-width: 1200px)
 {
+	/* Reajuste do tamanho do bg */
 	body
 	{
 		background-size: 100%;
 	}
 
+	/* Reajuste da posição do botão enviar */
 	#botao-enviar
 	{
 		margin-left: -0.4vw;
 	}	
 
-	/*== TIPOGRAFIA ==*/
+	/* TIPOGRAFIA: tive que diminuir alguns tamanhos e adicionar alguns paddings por questões de visualização */
 	.font_nav
 	{
 		padding-left: 2vw;
