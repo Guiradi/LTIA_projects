@@ -11,7 +11,7 @@ body
 	background: url('../img/bg.png') repeat;
 	background-size: 100% 1086vh;
 	font-family: "Courier Std","Courier New", Courier, monospace;
-	color: #4f0029;
+	color: #471824;
 	font-size: 15px;
 }
 
@@ -48,7 +48,7 @@ body
 /* Link da página atual */
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
 {
-	color: #852940;
+	color: #380012;
 	background: none;
 	text-decoration: underline;
 }
@@ -166,7 +166,7 @@ footer
 /* = Cor dos links = */
 .navbar-default .navbar-nav>li>a, #denuncia>a
 {
-	color: #852940;
+	color: #380012;
 }
 .justif>a, .justif>p>a
 {
@@ -175,7 +175,7 @@ footer
 }
 .relato>a
 {
-	color: #380012;
+	color: #471824;
 }
 
 /* = Cor do hover do link = */

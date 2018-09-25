@@ -1,0 +1,4 @@
+Observações para a reunião:
+
+	-> Tamanho das imagens gera lentidão no carregamento
+	-> As cores das fontes estão com os códigos do projeto, entretanto não condizem com o figma.
