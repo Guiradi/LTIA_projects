@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Carta Anônima - Informações</title>
+		<link rel="icon" href="img/favicon.png">
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<!-- Estilo CSS -->
+		<link rel="stylesheet" href="css/estilo.css">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    	<!--[if lt IE 9]>
+    		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+	</head>
+
+	<body>
+
+		<!-- Barra de Navegação -->
+		<?php
+			include "menu.php";
+		?>
+
+		<!-- Conteúdo Info -->
+		<section id="primeiro_conteudo">
+
+			<div class="container"> 
+				
+				<div class="row">
+					<div class="col-xs-8 col-xs-offset-2 titulo visible-sm-block visible-md-block visible-lg-block">
+						<h3>
+							<b>
+								Por que compartilhar?
+							</b>
+						</h3>
+					</div>
+				</div><!--/row titulo-->
+
+				<div class="row">
+					<div class="col-xs-8 col-xs-offset-2 subtitulo">
+						<p>
+							“A manutenção do segredo sobre a situação abusiva mantém a vítima em uma situação de vulnerabilidade e coerção, pois não permite que ela peça e/ou receba ajuda de outras pessoas, fato esse que pode estar relacionado à etiologia de transtornos afetivos e adaptativos caracterizados pela ansiedade, insegurança, agressividade e falta de confiança no outro.”
+						</p>
+					</div>					
+				</div> <!--/row subtitulo-->
+
+				<div class="row">
+
+					<div class="col-xs-8 col-xs-offset-2 justif">
+
+						&nbsp;&nbsp;Este fragmento foi tirado do artigo científico  Indicadores Clínicos em Psicoterapia com Mulheres Vítimas de Abuso Sexual, de Paulo Afrânio Santana e Ana Paula da Silva Baima.  Nele, pode-se entender a importância  e os benefícios em  compartilhar experiências abusivas. De acordo com o levantamento de dados do artigo, muitas vezes as vítimas sentem medo e culpa.<br><br>
+						&nbsp;&nbsp;Segundo o texto ainda, é importante que a vítima tenha um confidente que possa conversar, o que ajuda no processo para lidar com o trauma, seja ele físico ou psicológico. Caso se sinta confortável, além de tratar o Carta Anônima como confidente, é muito importante consultar um psiquiatra e  um psicólogo, que são profissionais que te ajudam a lidar com a situação abusiva. Para ler o artigo  científico que foi citado acima, acesse: <a href="http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1414-98932008000400006">LINK</a>.<br><br>
+						&nbsp;&nbsp;Aqui também estão alguns outros links que podem aliviar o processo de trauma:<br>
+						<u>Centro de Valorização à vida:</u> ligue 141 ou <a href="http://www.cvv.org.br/">acesse</a>.<br>
+						<u>Polícia Militar:</u> 190<br>
+						<u>Disque Denúncia:</u> 181<br>
+						<u>Central de Atendimento à Mulher:</u> 180<br>
+						<u>Centro de Valorização à Vida:</u> 141<br>
+						<u>Direitos Humanos:</u> 100<br>
+						<u>Associação Brasileira de Psiquiatria:</u> <a href="http://www.abp.org.br/portal/">acesse</a>.<br><br>
+
+						<b>Sobre nós:</b> Esse projeto foi inicialmente criado por estudantes da Unesp de Bauru. O objetivo do projeto é mostrar que a vítima de abuso não está sozinha e, por isso, compartilhar as experiências é tão importante. Além disso, compartilhar a maneira de lidar com a situação também é necessário para que outras pessoas também possam se orientar e se sentir seguras.<br><br>
+
+						<b>Observação:</b><br>
+						No final de cada relato, há um botão de denúncia, que serve para situações em que pessoas mal intencionadas, preconceituosas ou quaisquer outros fatores suspeitos apareçam em algum relato e os leitores possam reportá-lo como inapropriado, sempre de forma anônima. Então, caso você se depare com um relato assim, não hesite em clicar no botão e denunciá-lo para que remoção do post.
+						
+					</div>
+					
+				</div> <!--/row info-->
+
+			</div> <!--/container primeiro conteudo-->
+
+		</section>
+
+		<!-- Rodapé -->
+		<footer id="rodape">
+			
+			<div class="container">
+				
+				<div class="row">
+					
+					<div class="col-sm-3 col-md-4"  id="marca-texto1">
+
+						<span><b>
+							Polícia Militar:<br>
+							disque 190</b>
+						</span>
+					</div>
+
+					<div class="col-sm-6 col-md-4" id="marca-texto2">
+						
+						<span><b>
+							Central de Atendimento à mulher:<br>
+							disque 180</b>
+						</span>
+					</div>
+
+					<div class="col-sm-3 col-md-4" id="marca-texto3">
+
+						<span><b>
+							Disque Denúncia:<br>
+							disque 181</b>
+						</span>
+					</div>
+
+				</div> <!-- row rodape -->
+
+			</div> <!--/container rodape-->
+
+		</footer>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    	<script src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>

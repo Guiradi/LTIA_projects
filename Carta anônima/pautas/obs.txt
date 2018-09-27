@@ -1,0 +1,8 @@
+Observações para a reunião:
+
+	-> Tamanho das imagens gera lentidão no carregamento
+	-> Várias imagens de vários tamanhos é mais bonito, mais simples e mais rápido
+	-> Alterar cores, tamanhos, espaçamentos, alinhamentos das fontes
+	-> Autor(?): colocar ou não? Como? -> Atual: autor na página de relato individual
+	-> Link da lei inativo em privacidade
+	-> Aumentar o padding entre os links no collapsed
